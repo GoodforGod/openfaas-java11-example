@@ -12,14 +12,21 @@ First you need to load templates to start working with *OpenFaaS*
 Run this command:
 
 ```shell script
-faas-cli build -f ./my-function.yml
+faas-cli build -f ./openfaas-template.yml
 ```
 
 ### Deploy
 
 ```shell script
-faas-cli deploy -f ./my-function.yml
+faas-cli deploy -f ./openfaas-template.yml
 ```
+
+### Structure
+
+Package structure should remain the same so templates *entrypoint* code that creates 
+handler will be created correctly from this package as specified per *template*.
+
+Correct package name for *Handler* is default one *com.openfaas.function*
 
 ### Handler
 

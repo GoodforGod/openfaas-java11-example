@@ -1,2 +1,4 @@
-rootProject.name = 'openfaas-template'
+rootProject.name = projectName
 
+include(":model")
+project(":model").projectDir = file("./template/java11/model")

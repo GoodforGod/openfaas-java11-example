@@ -7,9 +7,8 @@ import com.openfaas.model.Response;
 public class Handler implements com.openfaas.model.IHandler {
 
     public IResponse Handle(IRequest req) {
-        Response res = new Response();
-        res.setBody("Hello, world MY WORLD!");
-
+        final Response res = new Response();
+        res.setBody("Hello, OpenFaaS World!");
         return res;
     }
 }

@@ -6,5 +6,5 @@ functions:
   openapi-resource-parser:
     lang: java11
     handler: .
-    image: my-function:latest
+    image: openfaas-template:latest
 
