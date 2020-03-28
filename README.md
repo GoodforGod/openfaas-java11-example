@@ -2,7 +2,7 @@
 
 The Java11 template uses gradle as a build system.
 
-Create functions by **forking** this function and renaming **my-function** yaml 
+Create functions by **forking** this function and renaming **openfaas-template** yaml 
 and inside yaml for you function name.
 
 ## Usage
@@ -12,13 +12,13 @@ First you need to load templates to start working with *OpenFaaS*
 Run this command:
 
 ```shell script
-faas-cli build -f ./openfaas-template.yml
+faas-cli build -f ./function-local.yml
 ```
 
 ### Deploy
 
 ```shell script
-faas-cli deploy -f ./openfaas-template.yml
+faas-cli deploy -f ./function-local.yml
 ```
 
 ### Structure
